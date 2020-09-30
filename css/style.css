@@ -1,24 +1,93 @@
-/* Denna fil skall innehålla din CSS kod */
-body {
-    background-color:rgb(168, 47, 255);
+* {
+    margin: 0;
 }
 
-h1 {
-    width:75%;
-    height:200px;
-    /*border: solid 2px green;*/
-    border-style: solid;
-    border-width: 2px;
-    border-color: green;
-    background-color: rgba(255,0,0,0.8);
+#container {
+    display: grid;
+width: 100vw;
+height: 100vw;
+grid-template-areas: 
+'hr hr hr hr hr'
+'na na na na as'
+'ar1 ar1 ar1 ar1 as'
+'ar2 ar2 ar3 ar3 as'
+'ar4 ar5 se ar6 as'
+'ar7 ar7 ar7 ar7 as'
+'ar8 ar8 ar8 ar8 as'
+'fo fo fo fo fo';
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-gap: 1px;
 }
 
-#blockis {
-    background: hotpink;
-    width:50%;
+header {
+    grid-area: hr;
+    background-color: pink;
 }
 
-span {
-    background-color: rgb(255,232,123);
-    
+nav {
+    grid-area: na;
+    background-color: coral;
 }
+
+aside {
+    grid-area: as;
+    background-color: orange;
+}
+
+.article1 {
+    grid-area: ar1;
+    background-color: lightgreen;
+}
+.article2 {
+    grid-area: ar2;
+    background-color: lightskyblue;
+}
+.article3 {
+    grid-area: ar3;
+    background-color: coral;
+}
+.article4 {
+    grid-area: ar4;
+    background-color: darkcyan;
+}
+.article5 {
+    grid-area: ar5;
+    background-color: lightblue;
+}
+.article6 {
+    grid-area: ar6;
+    background-color: purple;
+}
+.article7 {
+    grid-area: ar7;
+    background-color: pink;
+}
+.article8 {
+    grid-area: ar8;
+    background-color: red;
+}
+
+footer {
+    grid-area: fo;
+    background-color: purple;
+}
+
+.innergridwrapper {
+    grid-area: se;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.innerdiv {
+    background-color: green;
+}
+
