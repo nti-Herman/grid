@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 250vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas: 
+    'hd hd na'
+    'ar1 ar1 ar1'
+    'ar2 ar2 as'
+    'fo fo fo';
+    grid-gap: 1px;
+}
+
+header {
+    grid-area: hd;
+    background-color: darkmagenta;
+}
+
+nav {
+    grid-area: na;
+    background-color: greenyellow;
+}
+
+.article1 {
+    grid-area: ar1;
+    background-color: hotpink;
+}
+
+.article2 {
+    background-color: indianred;
+}
+
+.innergridwrapper {
+    grid-area: ar2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+}
+
+aside {
+    grid-area: as;
+    background-color: mediumslateblue;
+}
+
+footer {
+    grid-area: fo;
+    background-color: lightgreen;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
