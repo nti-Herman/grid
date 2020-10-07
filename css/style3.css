@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    'hd hd hd hd hd hd'
+    'ar2 ar2 ar2 ar3 as as'
+    'ar2 ar2 ar2 ar3 as as'
+    'ar2 ar2 ar2 ar3 as as'
+    'ar2 ar2 ar2 ar3 lig lig'
+    'ar2 ar2 ar2 ar3 lig liig'
+    'ar4 ar4 ar4 ar4 ar4 ar4'
+    'fo fo fo fo fo fo';
+    grid-gap: 5px;
+
+}
+
+#upperinnergrid {
+    padding: 5px;
+    grid-area: hd;
+    background-color: green;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'iig';
+}
+
+#upperinnerinnergrid {
+    padding:5px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    grid-area: iig;
+    grid-template-areas: 
+    'ia id in';
+}
+
+#article1 {
+    background-color: darkcyan;
+    grid-area: ia;
+}
+
+#div1 {
+    background-color: wheat;
+    grid-area: id;
+}
+
+nav {
+    background-color: tomato;
+    grid-area: in;
+}
+
+#article2 {
+    grid-area: ar2;
+    background-color: rgb(0, 30, 128);
+}
+
+#article3 {
+    grid-area: ar3;
+    background-color: red;
+}
+
+aside {
+    grid-area: as;
+    background-color: yellowgreen;
+}
+
+#lowerinnergrid {
+    display: grid;
+    grid-area: lig;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.innergrid {
+    background-color: darkkhaki;
+}
+
+#lowerinnerinnergrid {
+    display: grid;
+    grid-area: liig;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.innerinnergrid {
+    background-color: slategray;
+}
+
+#article4 {
+    grid-area: ar4;
+    background-color: rgb(18, 141, 172);
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgb(161, 40, 141);
+}
