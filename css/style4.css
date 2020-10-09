@@ -1,0 +1,54 @@
+* {
+    margin: 15px;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 250vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'as1 as2 hd hd'
+    'as1 as2 ar1 ar1'
+    'as1 as2 ar2 ar2'
+    'as1 as2 fo fo'
+    'as1 as2 fo fo';
+    gap: 30px;
+
+}
+
+header {
+    grid-area: hd;
+    background-color: lightcoral;
+}
+
+#article1 {
+    grid-area: ar1;
+    background-color: lightpink;
+}
+
+#article2 {
+    grid-area: ar2;
+    background-color: lightseagreen;
+}
+
+#aside1 {
+    grid-area: as1;
+    background-color: lime;
+}
+
+#aside2 {
+    grid-area: as2;
+    background-color: lightskyblue;
+}
+
+footer {
+    grid-area: fo;
+    background-color: lightsalmon;
+}
+
+h5 {
+    font-size: 15px;
+    font-family: sans-serif;
+}

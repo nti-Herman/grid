@@ -12,7 +12,7 @@
     'ar2 ar2 ar2 ar3 as as'
     'ar2 ar2 ar2 ar3 as as'
     'ar2 ar2 ar2 ar3 lig lig'
-    'ar2 ar2 ar2 ar3 lig liig'
+    'ar2 ar2 ar2 ar3 lig lig'
     'ar4 ar4 ar4 ar4 ar4 ar4'
     'fo fo fo fo fo fo';
     grid-gap: 5px;
@@ -20,9 +20,9 @@
 }
 
 #upperinnergrid {
-    padding: 5px;
+    padding: 10px;
     grid-area: hd;
-    background-color: green;
+    background-color: lightpink;
     display: grid;
     grid-gap: 5px;
     grid-template-areas: 
@@ -31,7 +31,7 @@
 
 #upperinnerinnergrid {
     padding:5px;
-    background-color: whitesmoke;
+    background-color: lavender;
     display: grid;
     grid-template-columns: 4fr 1fr 2fr;
     grid-template-rows: 1fr;
@@ -42,12 +42,12 @@
 }
 
 #article1 {
-    background-color: darkcyan;
+    background-color: lightskyblue;
     grid-area: ia;
 }
 
 #div1 {
-    background-color: wheat;
+    background-color: plum;
     grid-area: id;
 }
 
@@ -58,17 +58,17 @@ nav {
 
 #article2 {
     grid-area: ar2;
-    background-color: rgb(0, 30, 128);
+    background-color: palevioletred;
 }
 
 #article3 {
     grid-area: ar3;
-    background-color: red;
+    background-color: hotpink;
 }
 
 aside {
     grid-area: as;
-    background-color: yellowgreen;
+    background-color: lightblue;
 }
 
 #lowerinnergrid {
@@ -76,6 +76,7 @@ aside {
     grid-area: lig;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
 }
 
 .innergrid {
@@ -84,9 +85,9 @@ aside {
 
 #lowerinnerinnergrid {
     display: grid;
-    grid-area: liig;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
 }
 
 .innerinnergrid {
@@ -101,4 +102,9 @@ aside {
 footer {
     grid-area: fo;
     background-color: rgb(161, 40, 141);
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
