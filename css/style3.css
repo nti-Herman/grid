@@ -57,8 +57,30 @@ nav {
 }
 
 #article2 {
+    display: grid;
     grid-area: ar2;
-    background-color: palevioletred;
+    padding: 5px;
+    background: forestgreen;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+   
+}
+
+#innerdivgrid {
+    display: grid;
+    gap: 5px;
+    
+}
+
+.div1 {
+   
+    background: lightseagreen;
+}
+
+.div2 {
+   
+    background: magenta;
 }
 
 #article3 {

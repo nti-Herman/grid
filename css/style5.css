@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'as hd hd hd hd hd'
+    'na na na na na na'
+    'ar1 ar1 ar1 di ar2 ar2'
+    'ar5 ar5 ar5 ar5 ar4 ar4'
+    'ar5 ar5 ar5 ar5 fo fo';
+}
+
+header {
+    grid-area: hd;
+    background: lawngreen;
+}
+
+aside {
+    grid-area: as;
+    background: lightcoral;
+}
+
+nav {
+    grid-area: na;
+    background: lightpink;
+}
+
+div {
+    grid-area: di;
+    background: firebrick;
+}
+
+#article1 {
+    grid-area: ar1;
+    background: lightyellow;
+}
+
+#article2 {
+    grid-area: ar2;
+    background: limegreen;
+}
+
+#article3 {
+    grid-area: ar3;
+    background: lightblue;
+    height: 95%;
+}
+
+#article4 {
+    grid-area: ar4;
+    background: darkmagenta;
+}
+
+#article5 {
+    grid-area: ar5;
+    background: darksalmon;
+    display: grid;
+    grid-template-areas: 
+    '. ar3'
+    '. .';
+}
+
+footer {
+    grid-area: fo;
+    background: lightcoral; 
+}
